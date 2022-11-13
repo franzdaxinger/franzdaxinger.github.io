@@ -55,11 +55,7 @@
     <script>
         function unlockDoor(link,day) {
             const d = new Date();
-            <!--if (d.getDate()>=day && d.getMonth()==11)
-            {
-                window.location.href = link;
-            }-->
-            if (d.getMonth()==11)
+            if (d.getDate()>=day) <!--&& d.getMonth()==11)-->
             {
                 window.location.href = link;
             }
