@@ -1,16 +1,50 @@
----
----
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <title>IN DER KÄLTE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet"> 
+    <style>
+        .arch {font-family: 'Architects Daughter', cursive; color:white; font-weight: bold; font-size: 30px;}
+        h1 {font-family: 'Architects Daughter', cursive; padding-top: 50px; color: white; font-weight: bold; font-size: 40px;}
+        html {
+    background-image: url(https://cdn.shopify.com/s/files/1/2930/2308/products/entrance-house-with-christmas-decorations-christmas-tree-covered-with-snow-photography-backdrop-j-0737_05e11454-d02a-419f-8362-b41a16aca643_1400x.jpg?v=1573875319);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+    </style>
 </head>
+
 <body>
-    <h1>TestTestTest</h1>
-    <h2>SomeMoreTest</h2>
-    <p><a href="index-uikit.html">UikitTest</a>.</p>
+    <h1 style="padding-left: 50px">Hallo Schätzchen</h1>
+    <div class="arch" style="padding-left: 50px; padding-bottom: 50px;">I ha mi entschiede din adventskalender
+        <br />online zmache wil mir doch immer wieder a andere
+        <br />ort sind. Demit d türe zu dim wiehnachtshüsli, 
+        <br />ufgoht, musch aber do no s passwort igeh:</div>
+    <form>
+        <label class="arch" style="padding: 50px" for="pswd">Passwort: </label>
+        <input class="arch" type="passwort" id="pswd">
+        <input class="arch" style="color:black" type="button" value="Los!" onclick="checkPswd();" />
+    </form>
+    <!--Function to check password the already set password is admin-->
+    <script type="text/javascript">
+        function checkPswd() {
+            var confirmPassword = "vanillekipferl";
+            var password = document.getElementById("pswd").value;
+            if (password == confirmPassword) {
+                window.location="zdhzdj37d7c63jh.html";
+            }
+            else{
+                alert("Da isch leider noed s richtige passwort gsi. Frog mi doch.");
+            }
+        }
+    </script>
+    <div class="arch" style="padding: 50px;">Viel Spass <br /> Franz</div>
 </body>
 </html>
