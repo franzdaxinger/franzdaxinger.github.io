@@ -55,7 +55,7 @@
     <script>
         function unlockDoor(link,day) {
             const d = new Date();
-            if (d.getUTCDate()>=day)
+            if (d.getUTCDate()>day)
             {
                 window.location.href = link;
             }
