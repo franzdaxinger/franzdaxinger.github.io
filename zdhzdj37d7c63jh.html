@@ -58,7 +58,8 @@
             var tz = d.getTimezoneOffset();
             if (d.getDate()>=day && d.getMonth()==11 && tz<70)
             {   
-                window.location.href = link;
+                <--!window.location.href = link;-->
+                document.body.textContent += tz;
             }
         }
     </script>
