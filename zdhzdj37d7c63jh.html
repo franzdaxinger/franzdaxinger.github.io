@@ -55,14 +55,9 @@
     <script>
         function unlockDoor(link,day) {
             const d = new Date();
-            let diff = d.getTimezoneOffset();
-            diff = Math.abs(diff);
-            if (diff < 120)
+            if (d.getUCTDate()>=day)
             {
-                if (d.getUCTDate()>=day)
-                {
-                    window.location.href = link;
-                }
+                window.location.href = link;
             }
         }
     </script>
