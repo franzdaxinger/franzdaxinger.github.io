@@ -57,7 +57,10 @@
             const d = new Date();
             if (d.getDate()>=day)
             {
-                window.location.href = link;
+                if (currentLocalDate.getTimezoneOffset()<120)
+                {
+                    window.location.href = link;
+                }
             }
         }
     </script>
