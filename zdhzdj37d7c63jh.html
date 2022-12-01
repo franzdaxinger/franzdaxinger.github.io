@@ -55,9 +55,11 @@
     <script>
         function unlockDoor(link,day) {
             const d = new Date();
-            if (d.getDate()>=day)
+            var tz = d.getTimezoneOffset();
+            if (d.getDate()>=day && d.getMonth()==11 && tz<120)
             {   
-                window.location.href = link;
+                <!--window.location.href = link;-->
+                document.write("getTimezoneOffset() :" + tz);
             }
         }
     </script>
