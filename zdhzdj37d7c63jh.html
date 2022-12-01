@@ -56,11 +56,19 @@
         function unlockDoor(link,day) {
             const d = new Date();
             var tz = d.getTimezoneOffset();
-            var diff = d.getUTCDate()-d.getDate()
-            if (d.getDate()>=day && d.getMonth()==11 && tz<70)
+            var diff = d.getUTCDate()
+            if (d.getUTCDate()>=day && d.getMonth()==11)
             {   
                 <!-- window.location.href = link;-->
                 document.body.textContent += diff;
+            }
+            else
+            {
+                if (d.getHours==23 && diff<1.1)
+                {
+                    <!-- window.location.href = link;-->
+                    document.body.textContent += diff;
+                }
             }
         }
     </script>
