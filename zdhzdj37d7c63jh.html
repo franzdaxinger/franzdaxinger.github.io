@@ -56,11 +56,8 @@
         function unlockDoor(link,day) {
             const d = new Date();
             if (d.getDate()>=day)
-            {
-                if (currentLocalDate.getTimezoneOffset()<120)
-                {
-                    window.location.href = link;
-                }
+            {   
+                window.location.href = link;
             }
         }
     </script>
